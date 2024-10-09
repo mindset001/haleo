@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #0a0a0a; */
     --foreground: #ededed;
   }
 }
@@ -24,4 +24,64 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .outline-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Replace with the correct font */
+    font-size: 48px; /* Adjust the size as needed */
+    color: transparent; /* Text color should be transparent */
+    -webkit-text-stroke: 2px #00ffff; /* Outline color and width */
+    text-shadow: 
+      0 0 10px rgba(0, 255, 255, 0.5), /* First glow */
+      0 0 20px rgba(0, 255, 255, 0.5), /* Second glow for depth */
+      0 0 30px rgba(0, 255, 255, 0.5); /* More glow effect */
+  }
+  .email-container {
+    display: flex;
+    align-items: center;
+    border: 2px solid #00ffff; /* Neon border color */
+    padding: 8px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon glow */
+    width: 100%; /* Full width container */
+ /* Adjust based on your design */
+  }
+  
+  .email-input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    color: #00ffff; /* Text color */
+    font-size: 16px;
+    padding: 8px;
+    outline: none; /* Remove default input outline */
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon text shadow */
+  }
+  
+  .email-input::placeholder {
+    color: rgba(0, 255, 255, 0.5); /* Placeholder color */
+  }
+  
+  .join-button {
+    background-color: #11D8FC; /* Button background color */
+    border: none;
+    color: #000; /* Button text color */
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .join-button:hover {
+    background-color: #00ffff; /* Button hover effect */
+  }
+
+  .test {
+    background-image: url('../app/assets/back.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    /* padding: 50px 25px; */
+  }
+  
 }
