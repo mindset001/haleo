@@ -7,6 +7,10 @@ import Wine from '@/app/assets/wine.png'
 import Orange from '@/app/assets/orange.png'
 import Box from '@/app/assets/box.png'
 import Accordion from './components/Accordion/page'
+import Face from '@/app/assets/face.png'
+import LInked from '@/app/assets/link.png'
+import Int from '@/app/assets/int.png'
+import Twit from '@/app/assets/twit.png'
 
 function Landing() {
     return (
@@ -93,11 +97,18 @@ function Landing() {
             {/* footer  */}
             <section className='flex justify-center items-center mt-40'>
                 <div className='w-[60%]'>
-                    <div className='border-b p-4 mb-4 pb-10'>
-                        <div>
+                    <div className='border-b p-4 mb-4 pb-6 flex justify-between items-center'>
+                        <div className='flex items-center gap-2'>
                             <Image src={Logo} alt='' className='w-[124px] h-[27px]' />
+                            <div className='bg-[#fff] h-[50px] w-[2px]'></div>
+                            <p className='font-[600] text-[16px] mt-2'>Fitness & Wellness</p>
                         </div>
-                        <div></div>
+                        <div className='flex gap-[5px]'>
+                            <Image src={Face} alt='' className='w-[62.17px] h-[62.17px]'/>
+                            <Image src={Int} alt='' className='w-[62.17px] h-[62.17px]'/>
+                            <Image src={Twit} alt='' className='w-[62.17px] h-[62.17px]'/>
+                            <Image src={LInked} alt='' className='w-[62.17px] h-[62.17px]'/>
+                        </div>
                     </div>
                     <div className='flex justify-between mt-10'>
                         <p>Copyright  @2024 Asteria. <br /> All Rights Reserved</p>
