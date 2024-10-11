@@ -3,9 +3,10 @@ import Face from '@/app/assets/face.png'
 import LInked from '@/app/assets/link.png'
 import Int from '@/app/assets/int.png'
 import Twit from '@/app/assets/twit.png'
-import { Link } from 'react-scroll';
+
 import Image from 'next/image';
 import Logo from '@/app/assets/logo.png'
+import Link from 'next/link'
 
 function Footer() {
   return (
@@ -29,8 +30,8 @@ function Footer() {
             <div className="mb-6 md:mb-0">
                 <p className='mb-4 md:mb-0'>info@haleo.com</p>
                 <ul className="flex gap-6 items-center text-[16px] font-[200]">
-                    <li><Link to="">Privacy Policy</Link></li>
-                    <li><Link to="">Terms Of Use</Link></li>
+                    <li><Link href="">Privacy Policy</Link></li>
+                    <li><Link href="">Terms Of Use</Link></li>
 
                 </ul>
 
