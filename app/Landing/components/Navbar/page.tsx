@@ -45,7 +45,7 @@ function Navbar() {
         </div>
 
        {/* mobile  */}
-       <div className='block lg:hidden'>
+       <div className='block md:hidden'>
             {show && (
               <div onClick={handleShow}>
                 <Image src={Men} alt='' className='h-[30px] w-[30px]'/>
