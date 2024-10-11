@@ -34,6 +34,7 @@ body {
       0 0 20px rgba(0, 255, 255, 0.5), /* Second glow for depth */
       0 0 30px rgba(0, 255, 255, 0.5); /* More glow effect */
   }
+
   .email-container {
     display: flex;
     align-items: center;
@@ -43,10 +44,11 @@ body {
     background: rgba(0, 0, 0, 0.6); /* Dark background with transparency */
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Neon glow */
     width: 100%; /* Full width container */
- /* Adjust based on your design */
-  }
-  
-  .email-input {
+    max-width: 600px; /* Limit width on larger screens */
+    margin: 0 auto; /* Center container */
+}
+
+.email-input {
     flex: 1;
     border: none;
     background: transparent;
@@ -55,13 +57,17 @@ body {
     padding: 8px;
     outline: none; /* Remove default input outline */
     text-shadow: 0 0 10px rgba(0, 255, 255, 0.5); /* Neon text shadow */
-  }
-  
-  .email-input::placeholder {
+}
+
+.email-input::placeholder {
     color: rgba(0, 255, 255, 0.5); /* Placeholder color */
-  }
-  
-  .join-button {
+}
+
+.email-input:focus {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); /* Stronger glow on focus */
+}
+
+.join-button {
     background-color: #11D8FC; /* Button background color */
     border: none;
     color: #000; /* Button text color */
@@ -70,7 +76,52 @@ body {
     font-size: 16px;
     cursor: pointer;
     margin-left: 10px;
-  }
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.join-button:hover {
+    background-color: #00ffff; /* Change button color on hover */
+    color: #000; /* Ensure text stays readable */
+}
+
+.join-button:active {
+    transform: scale(0.98); /* Slightly reduce button size on click */
+    background-color: #00b7d1; /* Darken button color slightly */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .email-container {
+        flex-direction: column; /* Stack input and button */
+        padding: 6px;
+    }
+
+    .email-input {
+        width: 100%; /* Full width for input */
+        margin-bottom: 8px; /* Add space below input */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .join-button {
+        width: 100%; /* Full width button */
+        margin-left: 0; /* Remove left margin */
+        font-size: 14px; /* Adjust button font size */
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .email-input {
+        font-size: 12px; /* Even smaller font size for mobile */
+        padding: 6px; /* Reduce padding */
+    }
+
+    .join-button {
+        font-size: 12px; /* Smaller button font size */
+        padding: 8px 12px;
+    }
+}
+
   
   .join-button:hover {
     background-color: #00ffff; /* Button hover effect */
@@ -83,9 +134,7 @@ body {
     /* width: 100vw; */
     /* padding: 50px 25px; */
   }
-  
 
-  
-
-  
 }
+
+  
