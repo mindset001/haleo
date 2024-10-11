@@ -13,7 +13,7 @@ function Footer() {
     <div className='w-[80%] md:w-[60%]'>
         <div className='border-b p-4 mb-4 pb-6 flex flex-col md:flex-row justify-between items-center'>
             <div className='flex items-center gap-2'>
-                <Image src={Logo} alt='' className='w-[124px] h-[27px]' />
+                <Image src={Logo} alt='logo' className='w-[124px] h-[27px]' />
                 <div className='bg-[#fff] h-[50px] w-[2px]'></div>
                 <p className='font-[600] text-[16px] mt-2'>Fitness & Wellness</p>
             </div>

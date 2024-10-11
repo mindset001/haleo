@@ -135,6 +135,15 @@ body {
     /* padding: 50px 25px; */
   }
 
+  .test2 {
+    background-image: url('../app/assets/back2.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 100vw; */
+    /* padding: 50px 25px; */
+  }
+
+
 }
 
   

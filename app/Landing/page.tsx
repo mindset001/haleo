@@ -19,7 +19,7 @@ import Footer from './components/Footer/page'
 import About from './components/About/page'
 function Landing() {
     return (
-        <main className='test w-full'>
+        <main className='test2 lg:test w-full'>
         
             <Navbar />
          
